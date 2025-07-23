@@ -1,6 +1,5 @@
-
 import React from 'react';
-import type { AdvantagePoint } from '../types';
+import type { AdvantagePoint } from '../types.ts';
 
 const advantageData: AdvantagePoint[] = [
   {

@@ -1,10 +1,9 @@
-
 import React from 'react';
-import Header from './components/Header';
-import Philosophy from './components/Philosophy';
-import Services from './components/Services';
-import Advantage from './components/Advantage';
-import Footer from './components/Footer';
+import Header from './components/Header.tsx';
+import Philosophy from './components/Philosophy.tsx';
+import Services from './components/Services.tsx';
+import Advantage from './components/Advantage.tsx';
+import Footer from './components/Footer.tsx';
 
 const App: React.FC = () => {
   return (

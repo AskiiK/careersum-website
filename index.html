@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CareerSum | AI-Driven, Human-Led Career Consulting</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
   <!-- Tailwind CSS for modern styling -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts for better typography -->
@@ -57,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -100,6 +101,23 @@
 
 </head>
 <body class="antialiased">
+  <body class="antialiased">
+
+    <!-- START: Navigation Bar -->
+    <nav class="bg-gray-800 bg-opacity-50 backdrop-blur-md sticky top-0 z-50">
+      <div class="container mx-auto px-6 py-3 flex items-center justify-between">
+        <!-- Logo and Company Name -->
+        <a href="#" class="flex items-center space-x-3">
+          <img src="./assets/logo.png" alt="CareerSum Logo" class="h-8 w-8">
+          <span class="text-white text-xl font-bold">CareerSum</span>
+        </a>
+        <!-- Navigation Links (optional) -->
+        <div class="space-x-6">
+          <a href="https://calendar.app.google/NumWkNh1rxgGQzAq6" target="_blank" class="text-gray-300 hover:text-white transition">Book a Call</a>
+        </div>
+      </div>
+    </nav>
+    <!-- END: Navigation Bar -->
 
   <!-- Header & Hero Section -->
   <header class="hero-section text-white">
@@ -235,7 +253,7 @@
 <!-- START: Floating Chat Widget -->
 <div id="chat-bubble" class="chat-bubble">
   <!-- You can use an icon here, but text is simple for now -->
-  Chat
+  🤖
 </div>
 
 <div id="chat-window" class="chat-window">

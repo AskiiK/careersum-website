@@ -43,6 +43,61 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
     }
   </style>
+  <!-- START: Styles for Floating Chat Widget -->
+<style>
+  .chat-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 9998;
+    transition: transform 0.2s;
+  }
+  .chat-bubble:hover {
+    transform: scale(1.1);
+  }
+  .chat-window {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+    background-color: white;
+  }
+  .chat-window-header {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .close-chat {
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+</style>
+<!-- END: Styles for Floating Chat Widget -->
+
 </head>
 <body class="antialiased">
 
@@ -176,6 +231,41 @@
       <p class="mt-8 text-sm text-gray-500">&copy; 2025 CareerSum. All rights reserved.</p>
     </div>
   </footer>
+
+<!-- START: Floating Chat Widget -->
+<div id="chat-bubble" class="chat-bubble">
+  <!-- You can use an icon here, but text is simple for now -->
+  Chat
+</div>
+
+<div id="chat-window" class="chat-window">
+  <div class="chat-window-header">
+    <span>CareerSum AI</span>
+    <span id="close-chat" class="close-chat">&times;</span>
+  </div>
+  <iframe
+    src="https://careersum-frontend.vercel.app"
+    style="width:100%; height:calc(100% - 50px ); border:none;"
+    title="CareerSum AI Chat">
+  </iframe>
+</div>
+<!-- END: Floating Chat Widget -->
+
+<!-- START: JavaScript for Floating Chat Widget -->
+<script>
+  const chatBubble = document.getElementById('chat-bubble');
+  const chatWindow = document.getElementById('chat-window');
+  const closeChat = document.getElementById('close-chat');
+
+  chatBubble.addEventListener('click', () => {
+    chatWindow.style.display = 'flex';
+  });
+
+  closeChat.addEventListener('click', () => {
+    chatWindow.style.display = 'none';
+  });
+</script>
+<!-- END: JavaScript for Floating Chat Widget -->
 
 </body>
 </html>

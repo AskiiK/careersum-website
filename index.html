@@ -192,63 +192,145 @@
     </section>
 
     <!-- What We Offer Section -->
-    <section class="mt-20">
+    <section id="services" class="mt-20">
       <div class="text-center">
         <h2 class="text-3xl sm:text-4xl font-bold">How We Help You Succeed</h2>
         <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">Our services are tailored to meet the needs of ambitious professionals.</p>
       </div>
       <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Service 1 -->
-        <div class="feature-card">
+        <div class="feature-card cursor-pointer" data-target="detail-service1">
           <h3 class="text-xl font-bold text-blue-700">1:1 Career Strategy</h3>
           <p class="mt-2 text-gray-600">Personalized coaching sessions to define your goals and create a strategic roadmap for success.</p>
         </div>
         <!-- Service 2 -->
-        <div class="feature-card">
+        <div class="feature-card cursor-pointer" data-target="detail-service2">
           <h3 class="text-xl font-bold text-blue-700">Resume & LinkedIn Makeovers</h3>
           <p class="mt-2 text-gray-600">Craft a compelling narrative that stands out to recruiters and hiring managers in the digital age.</p>
         </div>
         <!-- Service 3 -->
-        <div class="feature-card">
+        <div class="feature-card cursor-pointer" data-target="detail-service3">
           <h3 class="text-xl font-bold text-blue-700">Interview & Mock Sessions</h3>
           <p class="mt-2 text-gray-600">Build confidence and master the art of interviewing with expert feedback and preparation.</p>
         </div>
         <!-- Service 4 -->
-        <div class="feature-card">
+        <div class="feature-card cursor-pointer" data-target="detail-service4">
           <h3 class="text-xl font-bold text-blue-700">Return-to-Work Programs</h3>
           <p class="mt-2 text-gray-600">Specialized support for women re-entering the workforce, focusing on confidence and modern workplace skills.</p>
         </div>
         <!-- Service 5 -->
-        <div class="feature-card">
+        <div class="feature-card cursor-pointer" data-target="detail-service5">
           <h3 class="text-xl font-bold text-blue-700">Corporate Workshops</h3>
           <p class="mt-2 text-gray-600">Team training on OKRs, product thinking, and strategic planning to elevate your organization's performance.</p>
         </div>
       </div>
+      <!-- Details for services -->
+      <div id="detail-service1" class="hidden mt-8 bg-white border rounded-lg p-6">
+        <h4 class="text-xl font-bold text-blue-700">1:1 Career Strategy</h4>
+        <p class="mt-2 text-gray-600">Work closely with our experts to map out long-term goals and actionable next steps tailored to your aspirations.</p>
+        <ul class="mt-2 list-disc list-inside text-gray-600">
+          <li>Deep-dive assessment of your strengths and growth areas</li>
+          <li>Personalized 90-day action plan</li>
+          <li>Regular accountability check-ins</li>
+        </ul>
+        <button class="back-to-top mt-4 bg-blue-600 text-white px-4 py-2 rounded">Back</button>
+      </div>
+      <div id="detail-service2" class="hidden mt-8 bg-white border rounded-lg p-6">
+        <h4 class="text-xl font-bold text-blue-700">Resume & LinkedIn Makeovers</h4>
+        <p class="mt-2 text-gray-600">We refine your professional story so you can stand out in a crowded market.</p>
+        <ul class="mt-2 list-disc list-inside text-gray-600">
+          <li>Professional resume formatting and keyword optimization</li>
+          <li>Compelling LinkedIn profile revamp</li>
+          <li>Guidance on personal branding and outreach</li>
+        </ul>
+        <button class="back-to-top mt-4 bg-blue-600 text-white px-4 py-2 rounded">Back</button>
+      </div>
+      <div id="detail-service3" class="hidden mt-8 bg-white border rounded-lg p-6">
+        <h4 class="text-xl font-bold text-blue-700">Interview & Mock Sessions</h4>
+        <p class="mt-2 text-gray-600">Gain confidence through mock interviews and targeted feedback.</p>
+        <ul class="mt-2 list-disc list-inside text-gray-600">
+          <li>Realistic interview practice with industry experts</li>
+          <li>Strategies to tackle difficult questions</li>
+          <li>Tips on salary negotiation and follow-up</li>
+        </ul>
+        <button class="back-to-top mt-4 bg-blue-600 text-white px-4 py-2 rounded">Back</button>
+      </div>
+      <div id="detail-service4" class="hidden mt-8 bg-white border rounded-lg p-6">
+        <h4 class="text-xl font-bold text-blue-700">Return-to-Work Programs</h4>
+        <p class="mt-2 text-gray-600">Designed to ease the transition back into the workforce with up‑to‑date skills.</p>
+        <ul class="mt-2 list-disc list-inside text-gray-600">
+          <li>Confidence-building workshops and mentorship</li>
+          <li>Refresher training on current industry tools</li>
+          <li>Networking sessions with like-minded professionals</li>
+        </ul>
+        <button class="back-to-top mt-4 bg-blue-600 text-white px-4 py-2 rounded">Back</button>
+      </div>
+      <div id="detail-service5" class="hidden mt-8 bg-white border rounded-lg p-6">
+        <h4 class="text-xl font-bold text-blue-700">Corporate Workshops</h4>
+        <p class="mt-2 text-gray-600">Empower your teams with workshops on OKRs, product thinking and strategic planning.</p>
+        <ul class="mt-2 list-disc list-inside text-gray-600">
+          <li>Custom curriculum designed for your organization</li>
+          <li>Hands-on activities to reinforce key concepts</li>
+          <li>Post-workshop action plans for managers and teams</li>
+        </ul>
+        <button class="back-to-top mt-4 bg-blue-600 text-white px-4 py-2 rounded">Back</button>
+      </div>
     </section>
 
     <!-- START: New Student & Graduate Programs Section -->
-    <section class="mt-20">
+    <section id="programs" class="mt-20">
       <div class="text-center">
         <h2 class="text-3xl sm:text-4xl font-bold">Student & Graduate Programs</h2>
         <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">Building a strong foundation for a successful future starts early. We guide students and new graduates through critical career decisions.</p>
       </div>
       <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Service for Class 10 -->
-        <div class="feature-card">
+        <div class="feature-card cursor-pointer" data-target="detail-program1">
           <h3 class="text-xl font-bold text-green-700">Stream Selection (Class 10)</h3>
           <p class="mt-2 text-gray-600">Clarity and confidence in choosing the right stream (Science, Commerce, Arts) based on your aptitude and interests.</p>
         </div>
         <!-- Service for Class 12 -->
-        <div class="feature-card">
+        <div class="feature-card cursor-pointer" data-target="detail-program2">
           <h3 class="text-xl font-bold text-green-700">College & Major Guidance (Class 12)</h3>
           <p class="mt-2 text-gray-600">Navigate the complex college admission landscape to find the best-fit institution and course for your career aspirations.</p>
         </div>
         <!-- Service for Graduates -->
-        <div class="feature-card">
+        <div class="feature-card cursor-pointer" data-target="detail-program3">
           <h3 class="text-xl font-bold text-green-700">First Job vs. MBA Strategy</h3>
           <p class="mt-2 text-gray-600">Strategic advice for final-year students and recent graduates on choosing between immediate industry experience and pursuing an MBA.</p>
         </div>
       </div>
+      <!-- Details for programs -->
+        <div id="detail-program1" class="hidden mt-8 bg-white border rounded-lg p-6">
+          <h4 class="text-xl font-bold text-green-700">Stream Selection (Class 10)</h4>
+          <p class="mt-2 text-gray-600">Discover subjects that align with your interests and open the right doors for future studies.</p>
+          <ul class="mt-2 list-disc list-inside text-gray-600">
+            <li>Aptitude and interest assessments</li>
+            <li>Career path mapping with industry insights</li>
+            <li>Joint counseling sessions with parents</li>
+          </ul>
+          <button class="back-to-top mt-4 bg-green-700 text-white px-4 py-2 rounded">Back</button>
+        </div>
+        <div id="detail-program2" class="hidden mt-8 bg-white border rounded-lg p-6">
+          <h4 class="text-xl font-bold text-green-700">College & Major Guidance</h4>
+          <p class="mt-2 text-gray-600">Get personalized advice on selecting colleges and majors that fit your strengths.</p>
+          <ul class="mt-2 list-disc list-inside text-gray-600">
+            <li>Shortlisting best-fit colleges and programs</li>
+            <li>Application strategy and essay review</li>
+            <li>Scholarship and financial aid guidance</li>
+          </ul>
+          <button class="back-to-top mt-4 bg-green-700 text-white px-4 py-2 rounded">Back</button>
+        </div>
+        <div id="detail-program3" class="hidden mt-8 bg-white border rounded-lg p-6">
+          <h4 class="text-xl font-bold text-green-700">First Job vs. MBA Strategy</h4>
+          <p class="mt-2 text-gray-600">Understand the trade-offs between jumping into your first job or investing in an MBA.</p>
+          <ul class="mt-2 list-disc list-inside text-gray-600">
+            <li>ROI analysis of various career paths</li>
+            <li>Guidance on internships and entry-level roles</li>
+            <li>Networking tips for both industry and B-school</li>
+          </ul>
+          <button class="back-to-top mt-4 bg-green-700 text-white px-4 py-2 rounded">Back</button>
+        </div>
     </section>
     <!-- END: New Student & Graduate Programs Section -->
 
@@ -343,6 +425,33 @@
   });
 </script>
 <!-- END: JavaScript for Floating Chat Widget -->
+
+<!-- START: JavaScript for Feature Details -->
+<script>
+  const cards = document.querySelectorAll('.feature-card[data-target]');
+  const backButtons = document.querySelectorAll('.back-to-top');
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const targetId = card.getAttribute('data-target');
+      const detail = document.getElementById(targetId);
+      if (detail) {
+        detail.classList.remove('hidden');
+        detail.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  backButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const detail = btn.parentElement;
+      detail.classList.add('hidden');
+      const section = detail.id.includes('program') ? document.getElementById('programs') : document.getElementById('services');
+      section.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+<!-- END: JavaScript for Feature Details -->
 
 </body>
 </html>
